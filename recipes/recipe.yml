@@ -21,7 +21,7 @@ modules:
       copr:
         - solopasha/hyprland
         - alternateved/keyd
-      cleanup:true
+      cleanup: true
     install:
       packages:
         - keyd
