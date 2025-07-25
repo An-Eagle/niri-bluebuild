@@ -1,0 +1,83 @@
+name: Sync Bazzite Bazaar Folder
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'  # Check hourly
+
+jobs:
+  sync-bazaar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+
+      - name: Install Git and Subversion
+        run: sudo apt-get install -y git subversion
+
+      - name: Get latest upstream commit for bazaar folder
+        id: upstream_commit
+        run: |
+          curl -s https://api.github.com/repos/ublue-os/bazzite/commits?path=system_files/desktop/shared/usr/share/ublue-os/bazaar | \
+          jq -r '.[0].sha' > .latest_bazaar_commit
+          echo "commit_sha=$(cat .latest_bazaar_commit)" >> $GITHUB_OUTPUT
+
+      - name: Check last synced commit
+        id: check_cached
+        run: |
+          if [ -f .last_bazaar_commit ]; then
+            echo "cached_sha=$(cat .last_bazaar_commit)" >> $GITHUB_OUTPUT
+          else
+            echo "cached_sha=none" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Compare SHAs
+        id: compare
+        run: |
+          if [ "${{ steps.upstream_commit.outputs.commit_sha }}" != "${{ steps.check_cached.outputs.cached_sha }}" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Exit if no changes
+        if: steps.compare.outputs.changed == 'false'
+        run: echo "No changes in upstream folder. Skipping."
+
+      - name: Remove old folder
+        if: steps.compare.outputs.changed == 'true'
+        run: rm -rf files/system/usr/share/ublue-os/bazaar
+
+      - name: Export updated bazaar folder
+        if: steps.compare.outputs.changed == 'true'
+        run: |
+          svn export https://github.com/ublue-os/bazzite/trunk/system_files/desktop/shared/usr/share/ublue-os/bazaar temp-bazaar
+          mkdir -p files/system/usr/share/ublue-os/
+          mv temp-bazaar files/system/usr/share/ublue-os/bazaar
+
+      - name: Store latest commit hash
+        if: steps.compare.outputs.changed == 'true'
+        run: cp .latest_bazaar_commit .last_bazaar_commit
+
+      - name: Commit changes
+        if: steps.compare.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add files/system/usr/share/ublue-os/bazaar .last_bazaar_commit
+          git commit -m "Sync: Update bazaar from ublue-os/bazzite"
+
+      - name: Create Pull Request
+        if: steps.compare.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Sync: Update bazaar from ublue-os/bazzite"
+          title: "Sync bazaar from upstream"
+          body: |
+            This PR updates the `bazaar` subfolder from upstream:
+            https://github.com/ublue-os/bazzite/tree/main/system_files/desktop/shared/usr/share/ublue-os/bazaar
+
+            Latest commit: `${{ steps.upstream_commit.outputs.commit_sha }}`
+          branch: sync/bazaar-update
+          delete-branch: true
