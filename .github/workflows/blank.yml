@@ -57,7 +57,7 @@ jobs:
           cd ..
           mkdir -p files/system/usr/share/ublue-os/
           rm -rf files/system/usr/share/ublue-os/bazaar
-          mv upstream/system_files/desktop/shared/usr/share/ublue-os/bazaar files/system/usr/share/ublue-os/
+          cp -r upstream/system_files/desktop/shared/usr/share/ublue-os/bazaar/ files/system/usr/share/ublue-os/bazaar
           rm -rf upstream
 
       - name: Store latest commit hash
