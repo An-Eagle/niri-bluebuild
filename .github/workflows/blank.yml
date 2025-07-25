@@ -48,14 +48,13 @@ jobs:
       - name: Sparse checkout of only bazaar folder
         if: steps.compare.outputs.changed == 'true'
         run: |
-          rm -rf upstream && mkdir upstream && cd upstream
+          mkdir upstream && cd upstream
           git init
           git remote add origin https://github.com/ublue-os/bazzite.git
           git config core.sparseCheckout true
           echo "system_files/desktop/shared/usr/share/ublue-os/bazaar/" >> .git/info/sparse-checkout
           git pull --depth=1 origin main
           cd ..
-          mkdir -p files/system/usr/share/ublue-os/
           rm -rf files/system/usr/share/ublue-os/bazaar
           cp -r upstream/system_files/desktop/shared/usr/share/ublue-os/bazaar/ files/system/usr/share/ublue-os/bazaar
           rm -rf upstream
