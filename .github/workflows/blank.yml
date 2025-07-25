@@ -13,9 +13,6 @@ jobs:
       - name: Checkout this repo
         uses: actions/checkout@v4
 
-      - name: Install Git and Subversion
-        run: sudo apt-get install -y git subversion
-
       - name: Get latest upstream commit for bazaar folder
         id: upstream_commit
         run: |
@@ -44,17 +41,21 @@ jobs:
       - name: Exit if no changes
         if: steps.compare.outputs.changed == 'false'
         run: echo "No changes in upstream folder. Skipping."
-
-      - name: Remove old folder
-        if: steps.compare.outputs.changed == 'true'
-        run: rm -rf files/system/usr/share/ublue-os/bazaar
-
-      - name: Export updated bazaar folder
+      
+      - name: Sparse checkout of only bazaar folder
         if: steps.compare.outputs.changed == 'true'
         run: |
-          svn export https://github.com/ublue-os/bazzite/trunk/system_files/desktop/shared/usr/share/ublue-os/bazaar temp-bazaar
+          rm -rf upstream && mkdir upstream && cd upstream
+          git init
+          git remote add origin https://github.com/ublue-os/bazzite.git
+          git config core.sparseCheckout true
+          echo "system_files/desktop/shared/usr/share/ublue-os/bazaar/" >> .git/info/sparse-checkout
+          git pull --depth=1 origin main
+          cd ..
           mkdir -p files/system/usr/share/ublue-os/
-          mv temp-bazaar files/system/usr/share/ublue-os/bazaar
+          rm -rf files/system/usr/share/ublue-os/bazaar
+          mv upstream/system_files/desktop/shared/usr/share/ublue-os/bazaar files/system/usr/share/ublue-os/
+          rm -rf upstream
 
       - name: Store latest commit hash
         if: steps.compare.outputs.changed == 'true'
