@@ -1,9 +1,9 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: template
+name: niri-bluebuild
 # description will be included in the image's metadata
-description: This is my personal OS image.
+description: This is my personal OS image, built for niri and ags(v2.3.0) based bar
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-main
