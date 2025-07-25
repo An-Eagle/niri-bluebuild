@@ -6,7 +6,7 @@ name: niri-bluebuild
 description: This is my personal OS image, built for niri and ags(v2.3.0) based bar
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/base-main
 image-version: 42 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -36,6 +36,7 @@ modules:
         - nautilus
         - wlogout
         - xwayland-satellite
+        - alacritty
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
