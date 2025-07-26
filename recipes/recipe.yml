@@ -48,7 +48,7 @@ modules:
         - gtksourceview5-devel
         - gtk4-layer-shell
         - gtk4-layer-shell-devel
-        - Networkmanager
+        - NetworkManager
         - NetworkManager-libnm-devel
         - bluez
         - wireplumber
