@@ -41,7 +41,7 @@ modules:
         - kitty
         - swww
         - bazaar
-        - swagbg
+        - swaybg
         - gtk4
         - gjs
         - gtk4-devel
