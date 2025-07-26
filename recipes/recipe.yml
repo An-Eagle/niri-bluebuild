@@ -30,6 +30,7 @@ modules:
         - adw-gtk3-theme
         - adwaita-fonts-all
         - gcc
+        - gcc-c++
         - hypridle
         - hyprlock
         - kde-connect
@@ -40,17 +41,48 @@ modules:
         - kitty
         - swww
         - bazaar
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-    install:
-      - micro
-      - starship
-    remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      - firefox
-      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - swagbg
+        - gtk4
+        - gjs
+        - gtk4-devel
+        - gtksourceview5-devel
+        - gtk4-layer-shell
+        - gtk4-layer-shell-devel
+        - Networkmanager
+        - NetworkManager-libnm-devel
+        - bluez
+        - wireplumber
+        - wireplumber-devel
+        - pipewire
+        - pipewire-pulseaudio
+        - pipewire-devel
+        - playerctl
+        - pulseaudio-utils
+        - brightnessctl
+        - grim
+        - slurp
+        - wl-clipboard
+        - curl
+        - bc
+        - libnotify
+        - libnotify-devel
+        - libdbusmenu-devel
+        - libdbusmenu-gtk3-devel
+        - cmake
+        - meson
+        - ninja-build
+        - git
+        - gobject-introspection-devel
+        - dunst
+        - nwg-look
+        - astal
+        - astal-gjs
+        - astal-gtk4
+        - astal-io
+        - astal-libs
+        - aylurs-gtk-shell2
+        - cliphist
+
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -58,10 +90,18 @@ modules:
       # If no repo information is specified, Flathub will be used by default
       install:
         - org.mozilla.firefox
+        - com.github.tchx84.Flatseal
+        - com.mattjakeman.ExtensionManager
+        - com.discordapp.Discord
         - org.gnome.Loupe
-      remove:
-        - org.gnome.eog
-    user: {} # Also add Flathub user repo, but no user packages
+        - net.nokyan.Resources
+        - org.gnome.Calculator
+        - org.gnome.Papers
+        - org.gnome.TextEditor
+        - org.gnome.baobab
+        - org.gnome.font-viewer
+        - org.gtk.Gtk3theme.adw-gtk3
+        - org.gtk.Gtk3theme.adw-gtk3-dark
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
