@@ -42,19 +42,18 @@ modules:
         - swww
         - bazaar
         - swaybg
-        - gtk4
-        - gjs
+        - gtk3-devel
         - gtk4-devel
-        - gtksourceview5-devel
-        - gtk4-layer-shell
+        - gtk-layer-shell-devel
         - gtk4-layer-shell-devel
+        - gobject-introspection-devel
+        - wayland-protocols-devel
+        - valadoc
+        - vala
         - NetworkManager
         - NetworkManager-libnm-devel
         - bluez
-        - wireplumber
         - wireplumber-devel
-        - pipewire
-        - pipewire-pulseaudio
         - pipewire-devel
         - playerctl
         - pulseaudio-utils
@@ -62,27 +61,14 @@ modules:
         - grim
         - slurp
         - wl-clipboard
-        - curl
-        - bc
-        - libnotify
-        - libnotify-devel
-        - libdbusmenu-devel
-        - libdbusmenu-gtk3-devel
         - cmake
         - meson
-        - ninja-build
-        - git
         - gobject-introspection-devel
-        - dunst
-        - nwg-look
-        - astal
-        - astal-gjs
-        - astal-gtk4
-        - astal-io
-        - astal-libs
-        - aylurs-gtk-shell2
-        - cliphist
+#        - dunst
+#        - nwg-look
+#        - cliphist
 
+  - type: brew
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
