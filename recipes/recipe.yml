@@ -71,23 +71,23 @@ modules:
   - type: brew
 
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
-      install:
-        - org.mozilla.firefox
-        - com.github.tchx84.Flatseal
-        - com.mattjakeman.ExtensionManager
-        - com.discordapp.Discord
-        - org.gnome.Loupe
-        - net.nokyan.Resources
-        - org.gnome.Calculator
-        - org.gnome.Papers
-        - org.gnome.TextEditor
-        - org.gnome.baobab
-        - org.gnome.font-viewer
-        - org.gtk.Gtk3theme.adw-gtk3
-        - org.gtk.Gtk3theme.adw-gtk3-dark
+    configurations :
+      - notify: true # Send notification after install/uninstall is finished (true/false)
+        scope: system
+        install:
+          - org.mozilla.firefox
+          - com.github.tchx84.Flatseal
+          - com.mattjakeman.ExtensionManager
+          - com.discordapp.Discord
+          - org.gnome.Loupe
+          - net.nokyan.Resources
+          - org.gnome.Calculator
+          - org.gnome.Papers
+          - org.gnome.TextEditor
+          - org.gnome.baobab
+          - org.gnome.font-viewer
+          - org.gtk.Gtk3theme.adw-gtk3
+          - org.gtk.Gtk3theme.adw-gtk3-dark
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
