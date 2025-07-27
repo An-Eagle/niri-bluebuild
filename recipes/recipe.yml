@@ -69,7 +69,9 @@ modules:
 #        - cliphist
 
   - type: brew
-
+  - type: script
+  scripts:
+    - astal-install.sh
   - type: default-flatpaks
     configurations :
       - notify: true # Send notification after install/uninstall is finished (true/false)
