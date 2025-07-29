@@ -64,12 +64,12 @@ modules:
         - cmake
         - meson
         - gobject-introspection-devel
-        - astal
-        - astal-gjs
-        - astal-gtk4
-        - astal-io
-        - astal-libs
-        - aylurs-gtk-shell2
+#        - astal
+#        - astal-gjs
+#        - astal-gtk4
+#        - astal-io
+#        - astal-libs
+#        - aylurs-gtk-shell2
 #        - dunst
 #        - nwg-look
 #        - cliphist
