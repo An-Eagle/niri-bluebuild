@@ -64,6 +64,7 @@ modules:
         - cmake
         - meson
         - gobject-introspection-devel
+        - gucharmap
 #        - astal
 #        - astal-gjs
 #        - astal-gtk4
