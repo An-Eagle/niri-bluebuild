@@ -1,4 +1,4 @@
-# Niri Bluebuild image &nbsp; [![bluebuild build badge](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
+# Niri Bluebuild image &nbsp; [![bluebuild build badge](https://github.com/An-Eagle/niri-bluebuild/actions/workflows/build.yml/badge.svg)](https://github.com/An-Eagle/niri-bluebuild/actions/workflows/build.yml)
 
 ## Installation
 
