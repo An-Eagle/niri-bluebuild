@@ -38,6 +38,7 @@ modules:
         - nautilus
         - wlogout
         - xwayland-satellite
+        - tuned-ppd
         - kitty
         - swww
         - bazaar
