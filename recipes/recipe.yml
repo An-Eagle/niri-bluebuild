@@ -67,7 +67,6 @@ modules:
         - meson
         - gobject-introspection-devel
         - gucharmap
-        - hyprland
 #        - astal
 #        - astal-gjs
 #        - astal-gtk4
