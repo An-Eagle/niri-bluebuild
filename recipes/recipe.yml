@@ -55,6 +55,7 @@ modules:
         - NetworkManager-libnm-devel
         - network-manager-applet
         - bluez
+        - blueman
         - wireplumber-devel
         - pipewire-devel
         - playerctl
