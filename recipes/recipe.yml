@@ -25,6 +25,7 @@ modules:
       cleanup: true
     install:
       packages:
+        - sddm
         - keyd
         - niri
         - adw-gtk3-theme
