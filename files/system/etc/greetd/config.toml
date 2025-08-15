@@ -1,0 +1,4 @@
+
+[initial_session]
+command = "niri --session"
+user = "nicolas"
