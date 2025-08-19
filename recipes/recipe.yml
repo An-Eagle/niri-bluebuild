@@ -21,7 +21,7 @@ modules:
       copr:
         - solopasha/hyprland
         - alternateved/keyd
-        - ublue-os/staging
+        - ublue-os/packages
       cleanup: true
     install:
       packages:
