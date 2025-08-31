@@ -75,7 +75,6 @@ modules:
 #        - astal-io
 #        - astal-libs
 #        - aylurs-gtk-shell2
-#        - dunst
 #        - nwg-look
 #        - cliphist
 
@@ -83,7 +82,7 @@ modules:
 
   - type: default-flatpaks
     configurations :
-      - notify: true # Send notification after install/uninstall is finished (true/false)
+      - notify: false # Send notification after install/uninstall is finished (true/false)
         scope: system
         install:
           - org.mozilla.firefox
