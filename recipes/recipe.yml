@@ -37,7 +37,6 @@ modules:
         - kde-connect
         - mate-polkit
         - nautilus
-        - wlogout
         - xwayland-satellite
         - tuned-ppd
         - kitty
@@ -75,8 +74,6 @@ modules:
 #        - astal-io
 #        - astal-libs
 #        - aylurs-gtk-shell2
-#        - nwg-look
-#        - cliphist
 
   - type: brew
 
