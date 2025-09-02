@@ -25,24 +25,32 @@ modules:
       cleanup: true
     install:
       packages:
+      #system functionnality
         - sddm
         - keyd
+        - NetworkManager
+        - bluez
+        - tuned-ppd
         - niri
-        - adw-gtk3-theme
-        - adwaita-fonts-all
-        - gcc
-        - gcc-c++
+        - xwayland-satellite
+        - brightnessctl
+        - playerctl
+        - swww
+        - swaybg
+        - grim
+        - slurp
+        - wl-clipboard
         - hypridle
         - hyprlock
-        - kde-connect
         - mate-polkit
-        - nautilus
-        - xwayland-satellite
-        - tuned-ppd
-        - kitty
-        - swww
-        - bazaar
-        - swaybg
+        - network-manager-applet
+      #building dependencies
+        - gcc
+        - gcc-c++
+        - pulseaudio-utils
+        - cmake
+        - meson
+        - gobject-introspection-devel
         - gtk3-devel
         - gtk4-devel
         - gtk-layer-shell-devel
@@ -51,23 +59,20 @@ modules:
         - wayland-protocols-devel
         - valadoc
         - vala
-        - NetworkManager
         - NetworkManager-libnm-devel
-        - network-manager-applet
-        - bluez
-        - blueman
         - wireplumber-devel
         - pipewire-devel
-        - playerctl
-        - pulseaudio-utils
-        - brightnessctl
-        - grim
-        - slurp
-        - wl-clipboard
-        - cmake
-        - meson
-        - gobject-introspection-devel
+      #Fonts, themes,etc 
+        - adw-gtk3-theme
+        - adwaita-fonts-all
+        #CLI/apps not doable with flatpak or homebrew
         - gucharmap
+        - powertop
+        - kde-connect
+        - nautilus
+        - kitty
+        - bazaar
+        - powertop
 #        - astal
 #        - astal-gjs
 #        - astal-gtk4
