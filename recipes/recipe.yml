@@ -73,6 +73,7 @@ modules:
         - kitty
         - bazaar
         - powertop
+        - neovim
 #        - astal
 #        - astal-gjs
 #        - astal-gtk4
