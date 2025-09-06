@@ -62,9 +62,11 @@ modules:
         - NetworkManager-libnm-devel
         - wireplumber-devel
         - pipewire-devel
-      #Fonts, themes,etc 
+        #Fonts, themes,etc 
         - adw-gtk3-theme
         - adwaita-fonts-all
+        #Language servers
+        - nodejs-bash-language-server
         #CLI/apps not doable with flatpak or homebrew
         - gucharmap
         - powertop
