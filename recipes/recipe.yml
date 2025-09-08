@@ -68,6 +68,7 @@ modules:
         #Language servers
         - nodejs-bash-language-server
         #CLI/apps not doable with flatpak or homebrew
+        - uupd
         - gucharmap
         - powertop
         - kde-connect
@@ -82,6 +83,9 @@ modules:
 #        - astal-io
 #        - astal-libs
 #        - aylurs-gtk-shell2
+  - type: rpm-ostree
+    remove:
+      - vim
 
   - type: brew
 
