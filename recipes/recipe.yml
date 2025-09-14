@@ -97,7 +97,6 @@ modules:
           - org.mozilla.firefox
           - com.github.tchx84.Flatseal
           - com.mattjakeman.ExtensionManager
-          - com.discordapp.Discord
           - org.gnome.Loupe
           - net.nokyan.Resources
           - org.gnome.Calculator
@@ -107,6 +106,7 @@ modules:
           - org.gnome.font-viewer
           - org.gtk.Gtk3theme.adw-gtk3
           - org.gtk.Gtk3theme.adw-gtk3-dark
+          - io.github.milkshiift.GoofCord
   - type: systemd
     # this example disables automatic flatpak updates and enables a custom service unit for all users
     system:
