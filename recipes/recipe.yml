@@ -46,6 +46,7 @@ modules:
         - network-manager-applet
         - gamescope
         - labwc
+        - hyprland
       #building dependencies
         - gcc
         - gcc-c++
