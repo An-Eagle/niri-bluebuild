@@ -44,6 +44,7 @@ modules:
         - hyprlock
         - mate-polkit
         - network-manager-applet
+        - gamescope
       #building dependencies
         - gcc
         - gcc-c++
