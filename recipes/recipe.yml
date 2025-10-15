@@ -45,6 +45,7 @@ modules:
         - mate-polkit
         - network-manager-applet
         - gamescope
+        - labwc
       #building dependencies
         - gcc
         - gcc-c++
