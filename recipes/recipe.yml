@@ -43,7 +43,6 @@ modules:
         - hypridle
         - hyprlock
         - mate-polkit
-        - network-manager-applet
         - gamescope
         - labwc
         - hyprland
