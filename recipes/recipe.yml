@@ -80,6 +80,7 @@ modules:
         - bazaar
         - powertop
         - neovim
+        - nextcloud-client
 #        - astal
 #        - astal-gjs
 #        - astal-gtk4
