@@ -107,9 +107,20 @@ modules:
           - org.gnome.TextEditor
           - org.gnome.baobab
           - org.gnome.font-viewer
+          - org.gnome.Showtime
           - org.gtk.Gtk3theme.adw-gtk3
           - org.gtk.Gtk3theme.adw-gtk3-dark
+          #More personal stuff
           - io.github.milkshiift.GoofCord
+          - net.ankiweb.anki
+          - org.gimp.GIMP
+          - org.libreoffice.LibreOffice
+          - io.github.ungoogled_software.ungoogled_chromium
+          - com.vscodium.codium
+  - type : chezmoi
+    repository: "https://github.com/An-Eagle/dotfiles" # my dotfiles repo
+    all-users: false # make users have to enable chezmoi manually
+    file-conflict-policy: replace # override changed files with those from the repo
   - type: systemd
     # this example disables automatic flatpak updates and enables a custom service unit for all users
     system:
