@@ -29,6 +29,7 @@ modules:
         - sddm
         - keyd
         - NetworkManager
+        - nm-connection-editor
         - bluez
         - tuned-ppd
         - niri
@@ -61,7 +62,7 @@ modules:
         - wayland-protocols-devel
         - valadoc
         - vala
-        - NetworkManager-libnm-devel
+        #- NetworkManager-libnm-devel
         - wireplumber-devel
         - pipewire-devel
         #Fonts, themes,etc 
