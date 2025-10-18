@@ -113,7 +113,7 @@ modules:
           - org.gtk.Gtk3theme.adw-gtk3-dark
           #More personal stuff
           - io.github.milkshiift.GoofCord
-          - net.ankiweb.anki
+          - net.ankiweb.Anki
           - org.gimp.GIMP
           - org.libreoffice.LibreOffice
           - io.github.ungoogled_software.ungoogled_chromium
