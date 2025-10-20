@@ -24,8 +24,9 @@ modules:
         - ublue-os/packages
       cleanup: true
     install:
+      install-weak-deps: false
       packages:
-      #system functionnality
+        #system functionnality
         - sddm
         - keyd
         - NetworkManager
@@ -47,6 +48,36 @@ modules:
         - gamescope
         - labwc
         - hyprland
+        - fuzzel
+        - ShellCheck
+        - gnome-keyring
+        - gstreamer1-plugins-good-qt6
+        - kernel-tools
+        - kf6-sonnet-hunspell
+        - kio-extras
+        - libproxy-bin
+        - media-player-info
+        - newt
+        - nodejs-docs
+        - nodejs-full-i18n
+        - nodejs-npm
+        - openssh-askpass
+        - perl-NDBM_File
+        - phonon-qt6-backend-vlc
+        - python3-beaker
+        - python3-crypto
+        - python3-netifaces
+        - python3-perf
+        - python3-psutil
+        - qt6-qttranslations
+        - ripgrep
+        - tree-sitter-cli
+        - vlc-plugin-ffmpeg
+        - vlc-plugin-pipewire
+        - xdg-desktop-portal-gnome
+        - xdg-desktop-portal-hyprland
+        - xsel 
+        - xset 
       #building dependencies
         - gcc
         - gcc-c++
@@ -68,6 +99,8 @@ modules:
         #Fonts, themes,etc 
         - adw-gtk3-theme
         - adwaita-fonts-all
+        - fontawesome-6-free-fonts
+        - gi-docgen-fonts
         #Language servers
         - nodejs-bash-language-server
         #CLI/apps not doable with flatpak or homebrew
@@ -75,18 +108,23 @@ modules:
         - gucharmap
         - powertop
         - kde-connect
+        - kde-connect-nautilus
         - nautilus
         - kitty
+        - alacritty
         - bazaar
         - powertop
         - neovim
         - nextcloud-client
+        - nextcloud-client-nautilus
 #        - astal
 #        - astal-gjs
 #        - astal-gtk4
 #        - astal-io
 #        - astal-libs
 #        - aylurs-gtk-shell2
+      exclude :
+        - waybar
   - type: rpm-ostree
     remove:
       - vim-enhanced
