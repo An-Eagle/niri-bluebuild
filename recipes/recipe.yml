@@ -103,6 +103,8 @@ modules:
         - gi-docgen-fonts
         #Language servers
         - nodejs-bash-language-server
+        #Java
+        - java-11-openjdk
         #CLI/apps not doable with flatpak or homebrew
         - uupd
         - gucharmap
