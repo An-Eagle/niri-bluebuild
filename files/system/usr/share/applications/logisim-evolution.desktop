@@ -3,6 +3,6 @@ Name=Logism-evolution
 GenericName=Logism-evolution (Steven Derrien fork)
 Comment=Logism-evolution (Steven Derrien fork)
 Categories=Development;
-Exec=/var/home/linuxbrew/.linuxbrew/bin/java -jar /usr/bin/logisim-evolution/logisim-evolution.jar
+Exec=/var/home/linuxbrew/.linuxbrew/opt/java11/bin/java -jar /usr/bin/logisim-evolution/logisim-evolution.jar
 Icon=/usr/share/icons/niri-bluebuild/apps/logisim-evolution.png
 Type=Application
