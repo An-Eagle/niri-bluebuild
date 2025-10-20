@@ -121,12 +121,15 @@ modules:
   - type : chezmoi
     repository: "https://github.com/An-Eagle/dotfiles" # my dotfiles repo
     all-users: false # make users have to enable chezmoi manually
-    file-conflict-policy: replace # override changed files with those from the repo
+    file-conflict-policy: skip # override changed files with those from the repo
   - type: systemd
     # this example disables automatic flatpak updates and enables a custom service unit for all users
     system:
       enabled:
         - sddm.service
+    user :
+      enabled:
+        - chezmoi-update.timer
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
