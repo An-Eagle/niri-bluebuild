@@ -24,7 +24,7 @@ modules:
         - ublue-os/packages
       cleanup: true
     install:
-      install-weak-deps: false
+      #install-weak-deps: false
       packages:
         #system functionnality
         - sddm
