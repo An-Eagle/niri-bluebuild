@@ -46,8 +46,6 @@ modules:
         - hyprlock
         - mate-polkit
         - gamescope
-        - labwc
-        - hyprland
         - fuzzel
         - ShellCheck
         - gnome-keyring
@@ -69,13 +67,11 @@ modules:
         - python3-netifaces
         - python3-perf
         - python3-psutil
-        - qt6-qttranslations
         - ripgrep
         - tree-sitter-cli
         - vlc-plugin-ffmpeg
         - vlc-plugin-pipewire
         - xdg-desktop-portal-gnome
-        - xdg-desktop-portal-hyprland
         - xsel 
         - xset 
       #building dependencies
