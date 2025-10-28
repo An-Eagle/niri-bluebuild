@@ -77,6 +77,8 @@ modules:
         - xsel 
         - xset 
         - nmap-ncat
+        - qalculate
+        - fd-find
       #building dependencies
         - gcc
         - gcc-c++
