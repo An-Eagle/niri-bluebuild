@@ -22,6 +22,7 @@ modules:
         - solopasha/hyprland
         - alternateved/keyd
         - ublue-os/packages
+        - errornointernet/walker
       cleanup: true
     install:
       install-weak-deps: false
@@ -47,6 +48,8 @@ modules:
         - mate-polkit
         - gamescope
         - fuzzel
+        - walker
+        - elephant
         - ShellCheck
         - gnome-keyring
         - gstreamer1-plugins-good-qt6
@@ -110,7 +113,6 @@ modules:
         - nautilus
         - kitty
         - alacritty
-        - bazaar
         - powertop
         - neovim
         - nextcloud-client

@@ -3,6 +3,6 @@ Name=Logisim-evolution
 GenericName=Logisim-evolution (Steven Derrien fork)
 Comment=Logisim-evolution (Steven Derrien fork)
 Categories=Development;
-Exec=sh -c "env _JAVA_AWT_WM_NONREPARENTING=1 _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dsun.java2d.uiScale=1.33' /usr/bin/java -jar /usr/bin/logisim-evolution/logisim-evolution.jar"
+Exec=sh -c "env _JAVA_AWT_WM_NONREPARENTING=1 _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dsun.java2d.uiScale=1' /usr/bin/java -jar /usr/bin/logisim-evolution/logisim-evolution.jar"
 Icon=/usr/share/icons/niri-bluebuild/apps/logisim-evolution.png
 Type=Application
