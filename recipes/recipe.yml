@@ -49,7 +49,6 @@ modules:
         - gamescope
         - fuzzel
         - walker
-        - elephant
         - ShellCheck
         - gnome-keyring
         - gstreamer1-plugins-good-qt6
@@ -93,6 +92,7 @@ modules:
         - wayland-protocols-devel
         - valadoc
         - vala
+        - gdk-pixbuf2-devel
         #- NetworkManager-libnm-devel
         - wireplumber-devel
         - pipewire-devel
