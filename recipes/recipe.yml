@@ -77,6 +77,7 @@ modules:
         - xdg-desktop-portal-gnome
         - xsel 
         - xset 
+        - nmap-ncat
       #building dependencies
         - gcc
         - gcc-c++
