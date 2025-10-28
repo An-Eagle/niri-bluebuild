@@ -131,6 +131,7 @@ modules:
   - type: rpm-ostree
     remove:
       - vim-enhanced
+      - firefox
 
   - type: brew
 
