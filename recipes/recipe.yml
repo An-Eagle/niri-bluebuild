@@ -95,6 +95,7 @@ modules:
         - valadoc
         - vala
         - gdk-pixbuf2-devel
+        - cairo-devel
         #- NetworkManager-libnm-devel
         - wireplumber-devel
         - pipewire-devel
