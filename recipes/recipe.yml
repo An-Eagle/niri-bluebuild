@@ -96,6 +96,13 @@ modules:
         - vala
         - gdk-pixbuf2-devel
         - cairo-devel
+        - cairo-gobject-devel
+        - rust
+        - cargo
+        - pango-devel
+        - graphene-devel
+        - poppler-glib-devel
+        - protobuf-compiler
         #- NetworkManager-libnm-devel
         - wireplumber-devel
         - pipewire-devel
