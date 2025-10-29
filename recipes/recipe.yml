@@ -7,7 +7,7 @@ description: This is my personal OS image, built for niri and ags(v2.3.0) based 
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/base-main
-image-version: 42 # latest is also supported if you want new updates ASAP
+image-version: 43 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -22,7 +22,6 @@ modules:
         - solopasha/hyprland
         - alternateved/keyd
         - ublue-os/packages
-        - errornointernet/walker
       cleanup: true
     install:
       install-weak-deps: false
@@ -48,7 +47,6 @@ modules:
         - mate-polkit
         - gamescope
         - fuzzel
-        - walker
         - ShellCheck
         - gnome-keyring
         - gstreamer1-plugins-good-qt6
