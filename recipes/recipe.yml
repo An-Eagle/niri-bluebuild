@@ -6,7 +6,7 @@ name: niri-bluebuild
 description: This is my personal OS image, built for niri and ags(v2.3.0) based bar
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/base-main
+base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 43 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -179,7 +179,7 @@ modules:
     # this example disables automatic flatpak updates and enables a custom service unit for all users
     system:
       enabled:
-        - sddm.service
+        #- sddm.service
     user :
       enabled:
         - chezmoi-update.timer
