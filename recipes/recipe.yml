@@ -177,9 +177,9 @@ modules:
     file-conflict-policy: skip # override changed files with those from the repo
   - type: systemd
     # this example disables automatic flatpak updates and enables a custom service unit for all users
-    system:
-      enabled:
-        #- sddm.service
+    #system:
+    #  enabled:
+    #   - sddm.service
     user :
       enabled:
         - chezmoi-update.timer
