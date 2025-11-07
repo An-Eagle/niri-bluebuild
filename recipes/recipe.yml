@@ -27,7 +27,6 @@ modules:
       install-weak-deps: false
       packages:
         #system functionnality
-        - sddm
         - keyd
         - NetworkManager
         - nm-connection-editor
@@ -176,10 +175,9 @@ modules:
     all-users: false # make users have to enable chezmoi manually
     file-conflict-policy: skip # override changed files with those from the repo
   - type: systemd
-    # this example disables automatic flatpak updates and enables a custom service unit for all users
     #system:
     #  enabled:
-    #   - sddm.service
+    #  - example.service
     user :
       enabled:
         - chezmoi-update.timer
