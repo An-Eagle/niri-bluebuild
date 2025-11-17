@@ -120,6 +120,7 @@ modules:
         - powertop
         - kde-connect
         - kde-connect-nautilus
+        - qqc2-desktop-style
         - nautilus
         - kitty
         - alacritty
