@@ -19,7 +19,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - lionheartp/hyprland
+        - lionheartp/Hyprland
         - alternateved/keyd
         - ublue-os/packages
       cleanup: true
