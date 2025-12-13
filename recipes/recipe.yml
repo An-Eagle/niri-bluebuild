@@ -19,7 +19,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - solopasha/hyprland
+        - lionheartp/hyprland
         - alternateved/keyd
         - ublue-os/packages
       cleanup: true
@@ -27,6 +27,7 @@ modules:
       install-weak-deps: false
       packages:
         #system functionnality
+        - quickshell
         - keyd
         - NetworkManager
         - nm-connection-editor
