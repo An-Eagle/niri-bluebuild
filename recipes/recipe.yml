@@ -6,7 +6,7 @@ name: niri-bluebuild
 description: This is my personal OS image, built for niri and ags(v2.3.0) based bar
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/base-main
 image-version: 43 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -22,10 +22,23 @@ modules:
         - lionheartp/Hyprland
         - alternateved/keyd
         - ublue-os/packages
+        - avengemedia/danklinux
+        - avengemedia/dms
       cleanup: true
     install:
       install-weak-deps: false
       packages:
+        #DMS experimental
+        - dms
+        - dms-greeter
+        - cliphist
+        - danksearch
+        - matugen
+        - ghostty
+        - material-symbol-fonts
+        - dgop
+        - breakpad
+        - cli11
         #system functionnality
         - quickshell
         - keyd
