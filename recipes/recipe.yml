@@ -35,10 +35,8 @@ modules:
         - danksearch
         - matugen
         - ghostty
-        - material-symbol-fonts
+        - material-symbols-fonts
         - dgop
-        - breakpad
-        - cli11
         #system functionnality
         - quickshell
         - keyd
