@@ -91,6 +91,7 @@ modules:
         - nmap-ncat
         - qalculate
         - fd-find
+        - qt6ct
       #building dependencies
         - gcc
         - gcc-c++
