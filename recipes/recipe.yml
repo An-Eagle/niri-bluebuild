@@ -24,6 +24,8 @@ modules:
         - ublue-os/packages
         - avengemedia/danklinux
         - avengemedia/dms
+        #VERY temporary
+        - yalter/niri
       cleanup: true
     install:
       install-weak-deps: false
@@ -48,15 +50,15 @@ modules:
         - xwayland-satellite
         - brightnessctl
         - playerctl
-        - swww
-        - swaybg
-        - grim
-        - slurp
+        #- swww
+        #- swaybg
+        #- grim
+        #- slurp
         - wl-clipboard
-        - wlsunset
-        - hypridle
-        - hyprlock
-        - mate-polkit
+        #- wlsunset
+        #- hypridle
+        #- hyprlock
+        #- mate-polkit
         - gamescope
         - fuzzel
         - ShellCheck
@@ -134,9 +136,8 @@ modules:
         - kde-connect-nautilus
         - qqc2-desktop-style
         - nautilus
-        - kitty
+        #- kitty
         - alacritty
-        - powertop
         - neovim
         - nextcloud-client
         - nextcloud-client-nautilus
