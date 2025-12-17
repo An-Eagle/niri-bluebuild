@@ -190,10 +190,6 @@ modules:
           - org.libreoffice.LibreOffice
           - io.github.ungoogled_software.ungoogled_chromium
           - com.vscodium.codium
-  - type : chezmoi
-    repository: "https://github.com/An-Eagle/dotfiles" # my dotfiles repo
-    all-users: false # make users have to enable chezmoi manually
-    file-conflict-policy: skip # override changed files with those from the repo
   - type: systemd
     #system:
     #  enabled:
