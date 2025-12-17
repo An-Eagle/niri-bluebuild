@@ -194,9 +194,5 @@ modules:
     #system:
     #  enabled:
     #  - example.service
-  - type: script
-    snippets:
-      #adds dms autostart
-      - "ln -sf /usr/lib/systemd/user/dms.service /usr/lib/systemd/user/niri.service.wants/dms.service"
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
