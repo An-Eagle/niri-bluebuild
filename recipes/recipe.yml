@@ -189,7 +189,6 @@ modules:
           - org.gimp.GIMP
           - org.libreoffice.LibreOffice
           - io.github.ungoogled_software.ungoogled_chromium
-          - com.vscodium.codium
   - type: systemd
     user:
       enabled:
