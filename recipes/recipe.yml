@@ -128,6 +128,7 @@ modules:
         - adwaita-fonts-all
         - fontawesome-6-free-fonts
         - gi-docgen-fonts
+        - papirus-icon-theme
         #Language servers
         - nodejs-bash-language-server
         #Java
@@ -184,11 +185,9 @@ modules:
           - org.gtk.Gtk3theme.adw-gtk3
           - org.gtk.Gtk3theme.adw-gtk3-dark
           #More personal stuff
-          - io.github.milkshiift.GoofCord
           - net.ankiweb.Anki
           - org.gimp.GIMP
           - org.libreoffice.LibreOffice
-          - io.github.ungoogled_software.ungoogled_chromium
   - type: systemd
     user:
       enabled:
