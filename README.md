@@ -15,6 +15,14 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
   systemctl reboot
   ```
+
+- A limitation of these images is groups and users. I use greetd with this image, so after initial install, you will need to switch to a different TTY (Ctrl + Alt + F1-12), and login to your main user account (!!NOT ROOT)
+-  Create a new greeter user and group , and add the greeter group to your current user
+```
+  sudo groupadd greeter
+  sudo useradd --system --no-create-home --shell /sbin/nologin --gid greeter greeter
+  sudo usermod -aG greeter $USER
+```
 - Then rebase to the signed image, like so:
   ```
   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/an-eagle/niri-bluebuild:latest
