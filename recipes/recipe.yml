@@ -189,6 +189,9 @@ modules:
           - org.gimp.GIMP
           - org.libreoffice.LibreOffice
   - type: systemd
+    system:
+      enabled:
+        - greetd.service
     user:
       enabled:
         - dms.service
