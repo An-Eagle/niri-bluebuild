@@ -45,3 +45,20 @@ These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](ht
 ```bash
 cosign verify --key cosign.pub ghcr.io/an-eagle/niri-bluebuild
 ```
+
+
+## Post-Installation
+
+This image provides an unconfigured Dank Material Shell and Niri, by default, but you can load some opinionated configurations from skel :
+Load Environment variables for DankMaterialShell (Highly recommended):
+```
+cp /etc/skel/.config/environment.d/90-dms.conf ~/.config/environment.d/90-dms.conf
+```
+Load all the configuration files :
+```
+cp /etc/skel/.config/ ~/.config/
+```
+Remember to reboot :
+```
+systemctl reboot
+```
