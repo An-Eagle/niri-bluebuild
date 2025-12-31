@@ -121,6 +121,7 @@ modules:
         - graphene-devel
         - poppler-glib-devel
         - protobuf-compiler
+        - qt5-qtdeclarative-devel
         #- NetworkManager-libnm-devel
         - wireplumber-devel
         - pipewire-devel
