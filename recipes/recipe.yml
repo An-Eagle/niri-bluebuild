@@ -136,6 +136,7 @@ modules:
         #Java
         - java-21-openjdk
         #CLI/apps not doable with flatpak or homebrew
+        - podman-compose
         - bazaar
         - uupd
         - gucharmap
