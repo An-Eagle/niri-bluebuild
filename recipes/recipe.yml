@@ -22,10 +22,10 @@ modules:
         - vscodium.repo
       copr:
         - lionheartp/Hyprland
-        - alternateved/keyd
+        #- alternateved/keyd
         - ublue-os/packages
         - avengemedia/danklinux
-        - avengemedia/dms
+        - avengemedia/dms-git
         #VERY temporary
         - yalter/niri
       keys :
@@ -34,35 +34,26 @@ modules:
     install:
       install-weak-deps: false
       packages:
-        #DMS experimental
+        #DMS 
         - dms
         - dms-greeter
         - cliphist
         - danksearch
         - matugen
         - ghostty
-        - material-symbols-fonts
         - dgop
         #system functionnality
         - quickshell
-        - keyd
+        #- keyd
         - NetworkManager
-        - nm-connection-editor
+        #- nm-connection-editor
         - bluez
         - tuned-ppd
         - niri
         - xwayland-satellite
         - brightnessctl
         - playerctl
-        #- swww
-        #- swaybg
-        #- grim
-        #- slurp
         - wl-clipboard
-        #- wlsunset
-        #- hypridle
-        #- hyprlock
-        #- mate-polkit
         - ddcutil
         - gamescope
         - fuzzel
@@ -94,45 +85,15 @@ modules:
         - xsel 
         - xset 
         - nmap-ncat
-        - qalculate
         - fd-find
         - qt6ct
-      #building dependencies
-        - gcc
-        - gcc-c++
-        - pulseaudio-utils
-        - cmake
-        - meson
-        - gobject-introspection-devel
-        - gtk3-devel
-        - gtk4-devel
-        - gtk-layer-shell-devel
-        - gtk4-layer-shell-devel
-        - gobject-introspection-devel
-        - wayland-protocols-devel
-        - valadoc
-        - vala
-        - gdk-pixbuf2-devel
-        - cairo-devel
-        - cairo-gobject-devel
-        - rust
-        - cargo
-        - pango-devel
-        - graphene-devel
-        - poppler-glib-devel
-        - protobuf-compiler
-        - qt5-qtdeclarative-devel
-        #- NetworkManager-libnm-devel
-        - wireplumber-devel
-        - pipewire-devel
         #Fonts, themes,etc 
         - adw-gtk3-theme
         - adwaita-fonts-all
         - fontawesome-6-free-fonts
         - gi-docgen-fonts
         - papirus-icon-theme
-        #Language servers
-        - nodejs-bash-language-server
+        - material-symbols-fonts
         #Java
         - java-21-openjdk
         #CLI/apps not doable with flatpak or homebrew
@@ -142,23 +103,36 @@ modules:
         - gucharmap
         - powertop
         - kde-connect
+        - fuse-sshfs
         - kde-connect-nautilus
         - qqc2-desktop-style
         - nautilus
-        #- kitty
         - alacritty
         - neovim
         - nextcloud-client
         - nextcloud-client-nautilus
-        - seahorse
         - epiphany
         - codium
-#        - astal
-#        - astal-gjs
-#        - astal-gtk4
-#        - astal-io
-#        - astal-libs
-#        - aylurs-gtk-shell2
+        #Lazy vim 
+        - fd-find
+        - curl 
+        - ripgrep
+        - tree-sitter-cli
+        - neovim
+        - fzf
+        - gcc-c++ 
+        - make 
+        - findutils
+        - python3-pip
+        - nodejs
+        - luarocks
+        - golang
+        - cargo
+        - compat-lua
+        - compat-lua-devel
+        - ImageMagick
+        - ghostscript
+        - fish
       exclude :
         - waybar
   - type: rpm-ostree
