@@ -26,8 +26,6 @@ modules:
         - ublue-os/packages
         - avengemedia/danklinux
         - avengemedia/dms-git
-        #VERY temporary
-        - yalter/niri
       keys :
         - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
       cleanup: true
@@ -94,6 +92,7 @@ modules:
         - gi-docgen-fonts
         - papirus-icon-theme
         - material-symbols-fonts
+        - google-noto-fonts-all
         #Java
         - java-21-openjdk
         #CLI/apps not doable with flatpak or homebrew
