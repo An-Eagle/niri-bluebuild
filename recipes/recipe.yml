@@ -25,7 +25,7 @@ modules:
         #- alternateved/keyd
         - ublue-os/packages
         - avengemedia/danklinux
-        - avengemedia/dms-git
+        - avengemedia/dms
       keys :
         - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
       cleanup: true
