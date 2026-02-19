@@ -3,18 +3,17 @@ name: Sync Bazzite Bazaar Folder
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 3 * * *'  # Check hourly
+    - cron: '0 3 * * *'  # Check daily at 3 AM
 
 jobs:
   sync-bazaar:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-      pull-requests: write
+      contents: write  # Only write access to repository contents is needed to push
 
     steps:
       - name: Checkout this repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Get latest upstream commit for bazaar folder
         id: upstream_commit
@@ -44,7 +43,7 @@ jobs:
       - name: Exit if no changes
         if: steps.compare.outputs.changed == 'false'
         run: echo "No changes in upstream folder. Skipping."
-      
+
       - name: Sparse checkout of only bazaar folder
         if: steps.compare.outputs.changed == 'true'
         run: |
@@ -64,24 +63,11 @@ jobs:
         if: steps.compare.outputs.changed == 'true'
         run: cp .latest_bazaar_commit .last_bazaar_commit
 
-      - name: Commit changes
+      - name: Commit and Push changes
         if: steps.compare.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add files/system/usr/share/ublue-os/bazaar .last_bazaar_commit
           git commit -m "Sync: Update bazaar from ublue-os/bazzite"
-
-      - name: Create Pull Request
-        if: steps.compare.outputs.changed == 'true'
-        uses: peter-evans/create-pull-request@v8
-        with:
-          commit-message: "Sync: Update bazaar from ublue-os/bazzite"
-          title: "Sync bazaar from upstream"
-          body: |
-            This PR updates the `bazaar` subfolder from upstream:
-            https://github.com/ublue-os/bazzite/tree/main/system_files/desktop/shared/usr/share/ublue-os/bazaar
-
-            Latest commit: `${{ steps.upstream_commit.outputs.commit_sha }}`
-          branch: sync/bazaar-update
-          delete-branch: true
+          git push
