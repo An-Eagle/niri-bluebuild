@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout this repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Get latest upstream commit for bazaar folder
         id: upstream_commit
