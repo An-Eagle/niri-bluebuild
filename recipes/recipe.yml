@@ -95,6 +95,12 @@ modules:
         - google-noto-fonts-all
         #Java
         - java-21-openjdk
+        #QT
+        - qt6-qtdeclarative-devel
+
+        #GO
+        - gopls
+        - delve
         #CLI/apps not doable with flatpak or homebrew
         - podman-compose
         - bazaar
