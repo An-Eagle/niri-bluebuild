@@ -41,9 +41,13 @@ modules:
         - ghostty
         - dgop
         #system functionnality
-        - quickshell
         #- keyd
         - NetworkManager
+        - cups-pk-helper
+        - kf6-kimageformats
+        - cava
+        - qt6-qtmultimedia
+
         #- nm-connection-editor
         - bluez
         - tuned-ppd
