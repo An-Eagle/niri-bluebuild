@@ -92,7 +92,7 @@ modules:
         - gi-docgen-fonts
         - papirus-icon-theme
         - material-symbols-fonts
-        - google-noto-fonts-all
+        #- google-noto-fonts-all
         #Java
         - java-21-openjdk
         #QT
