@@ -59,13 +59,13 @@ modules:
         - gnome-keyring
         - gstreamer1-plugins-good-qt6
         - kernel-tools
-        - kf6-sonnet-hunspell
+        #- kf6-sonnet-hunspell
         - kio-extras
         - libproxy-bin
         - media-player-info
         - newt
-        - nodejs-docs
-        - nodejs-full-i18n
+        #- nodejs-docs
+        #- nodejs-full-i18n
         - nodejs-npm
         - openssh-askpass
         - perl-NDBM_File
@@ -87,11 +87,11 @@ modules:
         - qt6ct
         #Fonts, themes,etc 
         - adw-gtk3-theme
-        - adwaita-fonts-all
-        - fontawesome-6-free-fonts
-        - gi-docgen-fonts
-        - papirus-icon-theme
-        - material-symbols-fonts
+        #- adwaita-fonts-all
+        #- fontawesome-6-free-fonts
+        #- gi-docgen-fonts
+        #- papirus-icon-theme
+        #- material-symbols-fonts
         #- google-noto-fonts-all
         #Java
         - java-21-openjdk
