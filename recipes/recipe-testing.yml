@@ -21,18 +21,18 @@ modules:
       #files :
       #  - vscodium.repo
       copr:
-        - lionheartp/Hyprland
+        #- lionheartp/Hyprland
         #- alternateved/keyd
         - ublue-os/packages
-        - avengemedia/danklinux
-        - avengemedia/dms
+        #- avengemedia/danklinux
+        #- avengemedia/dms
       #keys :
       #  - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
       cleanup: true
     install:
       packages:
         #system functionnality
-        - quickshell
+        #- quickshell
         #- keyd
         - NetworkManager
         #- nm-connection-editor
@@ -45,7 +45,7 @@ modules:
         - wl-clipboard
         - ddcutil
         - gamescope
-        - fuzzel
+        #- fuzzel
         - ShellCheck
         - gnome-keyring
         - gstreamer1-plugins-good-qt6
