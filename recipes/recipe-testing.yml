@@ -34,10 +34,10 @@ modules:
         #system functionnality
         #- quickshell
         #- keyd
-        #- NetworkManager
+        - NetworkManager
         #- nm-connection-editor
-        #- bluez
-        #- tuned-ppd
+        - bluez
+        - tuned-ppd
         #- niri
         #- xwayland-satellite
         #- brightnessctl
