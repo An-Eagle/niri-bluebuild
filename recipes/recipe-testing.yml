@@ -17,10 +17,10 @@ modules:
   #    - source: system
   #      destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
   - type: dnf
-    repos:
+    #repos:
       #files :
       #  - vscodium.repo
-      copr:
+      #copr:
         #- lionheartp/Hyprland
         #- alternateved/keyd
         #- ublue-os/packages
@@ -28,7 +28,7 @@ modules:
         #- avengemedia/dms
       #keys :
       #  - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
-      cleanup: true
+      #cleanup: true
     install:
       packages:
         #system functionnality
