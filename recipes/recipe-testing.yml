@@ -47,7 +47,7 @@ modules:
         #- gamescope
         #- fuzzel
         #- ShellCheck
-        #- gnome-keyring
+        - gnome-keyring
         # - gstreamer1-plugins-good-qt6
         #- kernel-tools
   
