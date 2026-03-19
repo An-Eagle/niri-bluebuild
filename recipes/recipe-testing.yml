@@ -30,6 +30,7 @@ modules:
         - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
       cleanup: true
     install:
+      packages:
         #system functionnality
         - quickshell
         #- keyd
