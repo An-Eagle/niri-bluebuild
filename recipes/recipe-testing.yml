@@ -23,7 +23,7 @@ modules:
       copr:
         #- lionheartp/Hyprland
         #- alternateved/keyd
-        - ublue-os/packages
+        #- ublue-os/packages
         #- avengemedia/danklinux
         #- avengemedia/dms
       #keys :
@@ -34,14 +34,14 @@ modules:
         #system functionnality
         #- quickshell
         #- keyd
-        - NetworkManager
+        #- NetworkManager
         #- nm-connection-editor
-        - bluez
-        - tuned-ppd
-        - niri
-        - xwayland-satellite
-        - brightnessctl
-        - playerctl
+        #- bluez
+        #- tuned-ppd
+        #- niri
+        #- xwayland-satellite
+        #- brightnessctl
+        #- playerctl
         #- wl-clipboard
         #- ddcutil
         #- gamescope
