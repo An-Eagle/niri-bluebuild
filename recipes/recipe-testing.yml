@@ -12,22 +12,22 @@ image-version: 43 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: files
-    files:
-      - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+  #- type: files
+  #  files:
+  #    - source: system
+  #      destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
   - type: dnf
     repos:
-      files :
-        - vscodium.repo
+      #files :
+      #  - vscodium.repo
       copr:
         - lionheartp/Hyprland
         #- alternateved/keyd
         - ublue-os/packages
         - avengemedia/danklinux
         - avengemedia/dms
-      keys :
-        - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
+      #keys :
+      #  - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
       cleanup: true
     install:
       packages:
