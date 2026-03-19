@@ -42,14 +42,14 @@ modules:
         - xwayland-satellite
         - brightnessctl
         - playerctl
-        - wl-clipboard
-        - ddcutil
-        - gamescope
+        #- wl-clipboard
+        #- ddcutil
+        #- gamescope
         #- fuzzel
-        - ShellCheck
-        - gnome-keyring
-        - gstreamer1-plugins-good-qt6
-        - kernel-tools
+        #- ShellCheck
+        #- gnome-keyring
+        # - gstreamer1-plugins-good-qt6
+        #- kernel-tools
   
   - type: rpm-ostree
     remove:
