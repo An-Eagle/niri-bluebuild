@@ -48,7 +48,15 @@ modules:
         - cava
         - qt6-qtmultimedia
 
-        #- nm-connection-editor
+        #Input
+        - ibus
+        - ibus-panel
+        - ibus-gtk2
+        - ibus-gtk3
+        - ibus-gtk4
+        - ibus-setup
+        - ibus-wayland
+
         - bluez
         - tuned-ppd
         - niri
