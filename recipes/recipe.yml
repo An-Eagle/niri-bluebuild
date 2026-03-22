@@ -30,33 +30,32 @@ modules:
         - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
       cleanup: true
     install:
-      install-weak-deps: false
+      install-weak-deps: true
       packages:
         #DMS 
         - dms
         - dms-greeter
-        - cliphist
         - danksearch
         - matugen
-        - ghostty
         - dgop
+        - cava
+
         #system functionnality
-        #- keyd
         - NetworkManager
         - cups-pk-helper
-        - kf6-kimageformats
-        - cava
-        - qt6-qtmultimedia
+        - bluez
+        - tuned-ppd
 
-        #Input
-        #- ibus
-        #- ibus-panel
-        #- ibus-gtk2
-        #- ibus-gtk3
-        #- ibus-gtk4
-        #- ibus-setup
-        #- ibus-wayland
+        #Desktop basics
+        - niri
+        - xwayland-satellite
+        - cliphist
+        - brightnessctl
+        - playerctl
+        - wl-clipboard
+        - ddcutil
         
+        #Input
         - fcitx5
         - fcitx5-gtk
         - fcitx5-gtk2
@@ -67,48 +66,6 @@ modules:
         - fcitx5-qt6
         - fcitx5-configtool
 
-
-
-        - bluez
-        - tuned-ppd
-        - niri
-        - xwayland-satellite
-        - brightnessctl
-        - playerctl
-        - wl-clipboard
-        - ddcutil
-        - gamescope
-        - fuzzel
-        - ShellCheck
-        - gnome-keyring
-        - gstreamer1-plugins-good-qt6
-        - kernel-tools
-        - kf6-sonnet-hunspell
-        - kio-extras
-        - libproxy-bin
-        - media-player-info
-        - newt
-        - nodejs-docs
-        - nodejs-full-i18n
-        - nodejs-npm
-        - openssh-askpass
-        - perl-NDBM_File
-        - phonon-qt6-backend-vlc
-        - python3-beaker
-        - python3-crypto
-        - python3-netifaces
-        - python3-perf
-        - python3-psutil
-        - ripgrep
-        - tree-sitter-cli
-        - vlc-plugin-ffmpeg
-        - vlc-plugin-pipewire
-        - xdg-desktop-portal-gnome
-        - xsel 
-        - xset 
-        - nmap-ncat
-        - fd-find
-        - qt6ct
         #Fonts, themes,etc 
         - adw-gtk3-theme
         - adwaita-fonts-all
@@ -128,19 +85,17 @@ modules:
         #CLI/apps not doable with flatpak or homebrew
         - podman-compose
         - bazaar
+        - ghostty
+        - qt6ct
         - uupd
-        - gucharmap
         - powertop
         - kde-connect
         - fuse-sshfs
         - kde-connect-nautilus
-        - qqc2-desktop-style
         - nautilus
-        - alacritty
         - neovim
         - nextcloud-client
         - nextcloud-client-nautilus
-        - epiphany
         - codium
         #Lazy vim 
         - fd-find
