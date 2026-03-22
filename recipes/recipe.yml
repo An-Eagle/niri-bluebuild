@@ -49,13 +49,25 @@ modules:
         - qt6-qtmultimedia
 
         #Input
-        - ibus
-        - ibus-panel
-        - ibus-gtk2
-        - ibus-gtk3
-        - ibus-gtk4
-        - ibus-setup
-        - ibus-wayland
+        #- ibus
+        #- ibus-panel
+        #- ibus-gtk2
+        #- ibus-gtk3
+        #- ibus-gtk4
+        #- ibus-setup
+        #- ibus-wayland
+        
+        - fcitx5
+        - fcitx5-gtk
+        - fcitx5-gtk2
+        - fcitx5-gtk3
+        - fcitx5-gtk4
+        - fcitx5-qt
+        - fcitx5-qt5
+        - fcitx5-qt6
+        - fcitx5-configtool
+
+
 
         - bluez
         - tuned-ppd
