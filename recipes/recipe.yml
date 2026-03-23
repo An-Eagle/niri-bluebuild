@@ -26,20 +26,28 @@ modules:
         - ublue-os/packages
         - avengemedia/danklinux
         - avengemedia/dms
+        #Temporary
+        - yalter/niri-git
       keys :
         - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
       cleanup: true
     install:
       install-weak-deps: true
       packages:
-        #DMS 
+        #DMS/danklinux
         - dms
         - dms-greeter
         - danksearch
         - matugen
         - dgop
         - cava
-
+        - ghostty
+        
+        #Ublue-os/packages
+        - bazaar
+        #Vscodium repo
+        - codium
+        
         #system functionnality
         - NetworkManager
         - cups-pk-helper
@@ -84,8 +92,6 @@ modules:
         - delve
         #CLI/apps not doable with flatpak or homebrew
         - podman-compose
-        - bazaar
-        - ghostty
         - qt6ct
         - uupd
         - powertop
@@ -96,7 +102,8 @@ modules:
         - neovim
         - nextcloud-client
         - nextcloud-client-nautilus
-        - codium
+        - tuned-gtk
+
         #Lazy vim 
         - fd-find
         - curl 
@@ -119,6 +126,7 @@ modules:
         - fish
       exclude :
         - waybar
+        - alacritty
   - type: rpm-ostree
     remove:
       - vim-enhanced
