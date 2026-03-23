@@ -77,11 +77,8 @@ modules:
         #Fonts, themes,etc 
         - adw-gtk3-theme
         - adwaita-fonts-all
-        - fontawesome-6-free-fonts
         - gi-docgen-fonts
         - papirus-icon-theme
-        - material-symbols-fonts
-        - google-noto-fonts-all
         #Java
         - java-21-openjdk
         #QT
@@ -132,7 +129,262 @@ modules:
       - vim-enhanced
       - firefox
       - firefox-langpacks
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode 
+        - Hack
+        - SourceCodePro
+        - Terminus
+        - JetBrainsMono
+        - NerdFontsSymbolsOnly
+      google-fonts:
+        - Roboto
+        - Open Sans
+        - Inter
+        
+        #Noto family
+        # Core / Global
+        - Noto Sans
+        - Noto Sans Display
+        - Noto Sans Mono
+        - Noto Serif
+        - Noto Serif Display
 
+        # East Asia & CJK
+        - Noto Sans CJK JP
+        - Noto Serif CJK JP 
+        - Noto Sans CJK KR
+        - Noto Serif CJK KR 
+        - Noto Sans CJK SC
+        - Noto Serif CJK SC 
+        - Noto Sans CJK TC
+        - Noto Serif CJK TC 
+        - Noto Sans Hong Kong
+        - Noto Serif Hong Kong
+        - Noto Sans Japanese
+        - Noto Serif Japanese
+        - Noto Sans Korean
+        - Noto Serif Korean
+        - Noto Sans Lisu
+        - Noto Sans Marchen
+        - Noto Sans Miao
+        - Noto Sans Mongolian
+        - Noto Sans Nushu
+        - Noto Traditional Nushu
+        - Noto Serif Old Uyghur
+        - Noto Sans Phags-pa
+        - Noto Sans Simplified Chinese
+        - Noto Serif Simplified Chinese
+        - Noto Sans Soyombo
+        - Noto Sans Tai Le
+        - Noto Serif Tangut
+        - Noto Sans Traditional Chinese
+        - Noto Serif Traditional Chinese
+        - Noto Serif Hentaigana
+        - Noto Serif Khitan Small Script
+        - Noto Sans Yi
+        - Noto Sans Zanabazar Square
+
+        # South & Southeast Asia
+        - Noto Sans Balinese
+        - Noto Serif Balinese
+        - Noto Sans Batak
+        - Noto Sans Bengali
+        - Noto Serif Bengali
+        - Noto Sans Bengali UI 
+        - Noto Sans Bhaiksuki
+        - Noto Sans Brahmi
+        - Noto Sans Buginese
+        - Noto Sans Buhid
+        - Noto Sans Chakma
+        - Noto Sans Cham
+        - Noto Sans Devanagari
+        - Noto Serif Devanagari
+        - Noto Sans Devanagari UI 
+        - Noto Serif Dives Akuru
+        - Noto Serif Dogra
+        - Noto Sans Grantha
+        - Noto Serif Grantha
+        - Noto Sans Gujarati
+        - Noto Serif Gujarati 
+        - Noto Sans Gunjala Gondi
+        - Noto Sans Gurmukhi
+        - Noto Serif Gurmukhi
+        - Noto Sans Hanunoo
+        - Noto Sans Indic Siyaq Numbers
+        - Noto Sans Javanese
+        - Noto Sans Kaithi
+        - Noto Sans Kannada
+        - Noto Serif Kannada
+        - Noto Sans Kawi
+        - Noto Sans Kharoshthi
+        - Noto Sans Khmer
+        - Noto Serif Khmer
+        - Noto Sans Khojki
+        - Noto Serif Khojki
+        - Noto Sans Khudawadi
+        - Noto Sans Lao
+        - Noto Sans Lao Looped
+        - Noto Serif Lao
+        - Noto Sans Lepcha
+        - Noto Sans Limbu
+        - Noto Sans Mahajani
+        - Noto Serif Makasar
+        - Noto Sans Malayalam
+        - Noto Sans Malayalam UI 
+        - Noto Sans Masaram Gondi
+        - Noto Sans Meetei Mayek
+        - Noto Sans Modi
+        - Noto Sans Mro
+        - Noto Sans Multani
+        - Noto Sans Myanmar
+        - Noto Serif Myanmar
+        - Noto Sans Nag Mundari
+        - Noto Sans Nandinagari
+        - Noto Sans New Tai Lue
+        - Noto Sans Newa
+        - Noto Serif Nyiakeng Puachue Hmong
+        - Noto Sans Ol Chiki 
+        - Noto Sans Oriya
+        - Noto Serif Oriya
+        - Noto Sans Pahawh Hmong
+        - Noto Sans Pau Cin Hau
+        - Noto Sans Rejang
+        - Noto Sans Saurashtra
+        - Noto Sans Sharada
+        - Noto Sans Siddham
+        - Noto Sans Sinhala
+        - Noto Serif Sinhala
+        - Noto Sans Sora Sompeng
+        - Noto Sans Sundanese
+        - Noto Sans Sunuwar
+        - Noto Sans Syloti Nagri
+        - Noto Sans Tagalog
+        - Noto Sans Tagbanwa
+        - Noto Sans Tai Tham
+        - Noto Sans Tai Viet
+        - Noto Sans Takri
+        - Noto Sans Tamil
+        - Noto Serif Tamil
+        - Noto Sans Tamil Supplement
+        - Noto Sans Tangsa
+        - Noto Sans Telugu
+        - Noto Serif Telugu
+        - Noto Sans Thaana
+        - Noto Sans Thai
+        - Noto Sans Thai Looped 
+        - Noto Serif Thai
+        - Noto Serif Tibetan
+        - Noto Sans Tirhuta
+        - Noto Serif Toto
+        - Noto Sans Wancho
+        - Noto Sans Warang Citi
+
+        # Middle-East, Central Asia & Africa
+        - Noto Sans Adlam
+        - Noto Sans Adlam Unjoined
+        - Noto Sans Arabic
+        - Noto Sans Arabic UI 
+        - Noto Kufi Arabic
+        - Noto Naskh Arabic
+        - Noto Naskh Arabic UI 
+        - Noto Sans Armenian
+        - Noto Serif Armenian
+        - Noto Sans Avestan
+        - Noto Sans Bamum
+        - Noto Sans Bassa Vah
+        - Noto Sans Caucasian Albanian
+        - Noto Sans Chorasmian
+        - Noto Sans Coptic
+        - Noto Sans Elymaic
+        - Noto Sans Ethiopic
+        - Noto Serif Ethiopic
+        - Noto Sans Georgian
+        - Noto Serif Georgian
+        - Noto Sans Hanifi Rohingya
+        - Noto Sans Hatran
+        - Noto Sans Hebrew
+        - Noto Serif Hebrew
+        - Noto Rashi Hebrew
+        - Noto Sans Imperial Aramaic
+        - Noto Sans Inscriptional Pahlavi
+        - Noto Sans Inscriptional Parthian
+        - Noto Sans Kayah Li
+        - Noto Sans Mandaic
+        - Noto Sans Manichaean
+        - Noto Sans Medefaidrin
+        - Noto Sans Mende Kikakui
+        - Noto Sans Meroitic
+        - Noto Sans N'Ko
+        - Noto Sans N'Ko Unjoined
+        - Noto Sans Nabataean
+        - Noto Nastaliq Urdu
+        - Noto Sans Old North Arabian
+        - Noto Sans Old Persian
+        - Noto Sans Old Sogdian
+        - Noto Sans Old South Arabian
+        - Noto Sans Osmanya
+        - Noto Serif Ottoman Siyaq
+        - Noto Sans Palmyrene
+        - Noto Sans Psalter Pahlavi
+        - Noto Sans Samaritan
+        - Noto Sans Sogdian
+        - Noto Sans Syriac
+        - Noto Sans Syriac Eastern
+        - Noto Sans Syriac Western
+        - Noto Sans Tifinagh
+        - Noto Sans Vai
+        - Noto Serif Yezidi
+
+        # Indigenous Americas, Oceania & Miscellaneous
+        - Noto Sans Canadian Aboriginal
+        - Noto Sans Cherokee
+        - Noto Sans Deseret
+        - Noto Sans Duployan
+        - Noto Sans Osage
+        - Noto Sans Shavian
+
+        # Historical & Ancient
+        - Noto Sans Anatolian Hieroglyphs
+        - Noto Sans Carian
+        - Noto Sans Cuneiform
+        - Noto Sans Cypriot
+        - Noto Sans Cypro Minoan
+        - Noto Sans Egyptian Hieroglyphs
+        - Noto Sans Elbasan
+        - Noto Sans Glagolitic
+        - Noto Sans Gothic
+        - Noto Sans Linear A
+        - Noto Sans Linear B
+        - Noto Sans Lydian
+        - Noto Sans Mayan Numerals
+        - Noto Sans Ogham
+        - Noto Sans Old Hungarian
+        - Noto Sans Old Italic
+        - Noto Sans Old Permic
+        - Noto Sans Old Turkic
+        - Noto Sans Phoenician
+        - Noto Sans Runic
+        - Noto Serif Todhri
+        - Noto Sans Ugaritic
+        - Noto Sans Vithkuqi
+        - Noto Serif Vithkuqi
+
+        # Emoji & Symbols
+        - Noto Color Emoji
+        - Noto Emoji
+        - Noto Music
+        - Noto Sans Math
+        - Noto Sans SignWriting
+        - Noto Sans Symbols
+        - Noto Sans Symbols 2
+        - Noto Znamenny Musical Notation
+      url-fonts:
+        - name: FontAwesome
+          url: https://use.fontawesome.com/releases/v7.2.0/fontawesome-free-7.2.0-desktop.zip
+        - name: Material Symbol Fonts
+          url: https://github.com/google/material-design-icons/archive/refs/tags/4.0.0.zip
   - type: brew
 
   - type: default-flatpaks
