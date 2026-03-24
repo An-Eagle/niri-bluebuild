@@ -15,14 +15,6 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
   systemctl reboot
   ```
-
-- A limitation of these images is groups and users. I use greetd with this image, so after initial install, you will need to switch to a different TTY (Ctrl + Alt + F1-12), and login to your main user account (!!NOT ROOT)
--  Create a new greeter user and group , and add the greeter group to your current user
-```
-  sudo groupadd greeter
-  sudo useradd --system --no-create-home --shell /sbin/nologin --gid greeter greeter
-  sudo usermod -aG greeter $USER
-```
 - Then rebase to the signed image, like so:
   ```
   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/an-eagle/niri-bluebuild:latest
@@ -31,11 +23,18 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
   systemctl reboot
   ```
+- This can break some systems, but can also be essential to power management. You can try this out and rollback with rpm-ostree rollback if necessary :
+  ```
+  rpm-ostree kargs --append='pcie_aspm=force'
+  ```
+
+
+
 
 The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
 
 ## ISO
-
+!!!!BROKEN!!!!
 If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
 
 ## Verification
