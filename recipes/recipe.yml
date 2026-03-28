@@ -101,6 +101,9 @@ modules:
         - nextcloud-client
         - nextcloud-client-nautilus
         - tuned-gtk
+        - ethtool
+        - acpica-tools
+        - v4l-utils
 
         #Lazy vim 
         - fd-find
