@@ -81,7 +81,7 @@ modules:
         - gi-docgen-fonts
         - papirus-icon-theme
         #Java
-        - java-21-openjdk
+        - java-25-openjdk
         #QT
         - qt6-qtdeclarative-devel
 
