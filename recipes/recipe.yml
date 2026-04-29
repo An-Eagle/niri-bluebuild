@@ -27,6 +27,7 @@ modules:
         - ublue-os/packages
         - avengemedia/danklinux
         - avengemedia/dms
+        - errornointernet/quickshell
         #Temporary
         - yalter/niri-git
       keys :
@@ -35,6 +36,7 @@ modules:
     install:
       install-weak-deps: true
       packages:
+        - quickshell-git
         #DMS/danklinux
         - dms
         - dms-greeter
