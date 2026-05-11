@@ -54,6 +54,7 @@ modules:
         - cups-pk-helper
         - bluez
         - tuned-ppd
+        - gnome-keyring-pam
 
         #Desktop basics
         - niri
